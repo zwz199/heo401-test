@@ -41,7 +41,7 @@ const AdBlockDetect = dynamic(() => import('@/components/AdBlockDetect'), { ssr:
  * @returns
  */
 const ExternalPlugin = (props) => {
-    const CRISP_WEBSITE_ID = siteConfig('CRISP_WEBSITE_ID')
+    const CRISP_WEBSITE_ID = BLOG.CRISP_WEBSITE_ID
   // 导入外部自定义脚本
     if (CRISP_WEBSITE_ID) {
        window.$crisp=[];
