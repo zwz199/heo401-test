@@ -37,7 +37,7 @@ const MyApp = ({ Component, pageProps }) => {
         loadExternalResource(url, 'js')
       }
     }
-   //导入外部自定义脚本
+   // 导入外部自定义脚本
     if (BLOG.CRISP_WEBSITE_ID) {
        window.$crisp = []
        window.CRISP_WEBSITE_ID = BLOG.CRISP_WEBSITE_ID
