@@ -38,7 +38,12 @@ const MyApp = ({ Component, pageProps }) => {
         loadExternalResource(url, 'js')
       }
     }
-
+    //导入外部自定义脚本
+    if (BLOG.CRISP_WEBSITE_ID) {
+       window.$crisp=[];
+       window.CRISP_WEBSITE_ID=BLOG.CRISP_WEBSITE_ID;
+      loadExternalResource("https://client.crisp.chat/l.js", 'js')
+    }
     // 导入外部自定义样式
     if (BLOG.CUSTOM_EXTERNAL_CSS && BLOG.CUSTOM_EXTERNAL_CSS.length > 0) {
       for (const url of BLOG.CUSTOM_EXTERNAL_CSS) {
