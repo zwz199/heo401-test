@@ -1,8 +1,6 @@
 import BLOG from 'blog.config'
 import dynamic from 'next/dynamic'
 import WebWhiz from './Webwhiz'
-import { loadExternalResource } from '@/lib/utils'
-
 
 // import TwikooCommentCounter from '@/components/TwikooCommentCounter'
 // import { DebugPanel } from '@/components/DebugPanel'
