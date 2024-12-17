@@ -1,6 +1,8 @@
 import BLOG from 'blog.config'
 import dynamic from 'next/dynamic'
 import WebWhiz from './Webwhiz'
+import { isBrowser, loadExternalResource } from '@/lib/utils'
+
 
 // import TwikooCommentCounter from '@/components/TwikooCommentCounter'
 // import { DebugPanel } from '@/components/DebugPanel'
@@ -39,6 +41,13 @@ const AdBlockDetect = dynamic(() => import('@/components/AdBlockDetect'), { ssr:
  * @returns
  */
 const ExternalPlugin = (props) => {
+    const CRISP_WEBSITE_ID = siteConfig('CRISP_WEBSITE_ID')
+  // 导入外部自定义脚本
+    if (CRISP_WEBSITE_ID) {
+       window.$crisp=[];
+       window.CRISP_WEBSITE_ID=CRISP_WEBSITE_ID;
+      loadExternalResource("https://client.crisp.chat/l.js", 'js')
+    }
   return <>
           {JSON.parse(BLOG.THEME_SWITCH) && <ThemeSwitch />}
           {JSON.parse(BLOG.DEBUG) && <DebugPanel />}
