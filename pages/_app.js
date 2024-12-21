@@ -38,7 +38,7 @@ const MyApp = ({ Component, pageProps }) => {
       }
     }
    // 导入外部自定义脚本
-    loadExternalResource('//code.jivosite.com/widget/5h2wnVbOAb.js', 'js')
+    loadExternalResource('//code.jivosite.com/widget/2HzwQik8kn.js', 'js')
     // 导入外部自定义样式
     if (BLOG.CUSTOM_EXTERNAL_CSS && BLOG.CUSTOM_EXTERNAL_CSS.length > 0) {
       for (const url of BLOG.CUSTOM_EXTERNAL_CSS) {
