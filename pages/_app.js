@@ -38,7 +38,7 @@ const MyApp = ({ Component, pageProps }) => {
       }
     }
    // 导入外部自定义脚本
-    loadExternalResource('https://plugin-code.salesmartly.com/js/project_202700_209207_1734763632.js', 'js')
+    loadExternalResource('//code.jivosite.com/widget/5h2wnVbOAb.js', 'js')
     if (BLOG.CRISP_WEBSITE_ID) {
        window.$crisp = []
        window.CRISP_WEBSITE_ID = BLOG.CRISP_WEBSITE_ID
