@@ -17,8 +17,8 @@ const BLOG = {
 
   CUSTOM_MENU: process.env.NEXT_PUBLIC_CUSTOM_MENU || true, // 支持Menu 类型，从3.12.0版本起，各主题将逐步支持灵活的二级菜单配置，替代了原来的Page类型，此配置是试验功能、默认关闭。
 
-  AUTHOR: process.env.NEXT_PUBLIC_AUTHOR || '狼友收藏夹', // 您的昵称 例如 tangly1024
-  BIO: process.env.NEXT_PUBLIC_BIO || '你想看的这里都有', // 作者简介
+  AUTHOR: process.env.NEXT_PUBLIC_AUTHOR || '滴滴~看这里~', // 您的昵称 例如 tangly1024
+  BIO: process.env.NEXT_PUBLIC_BIO || '上车方式：如您不知道我们的上车暗号，请点击页面右下角<消息按钮>打开聊天框，发送“我要上车”，我们会在2分钟内回复您', // 作者简介
   LINK: process.env.NEXT_PUBLIC_LINK || 'https://www.scj-vip.top', // 网站地址
   KEYWORDS: process.env.NEXT_PUBLIC_KEYWORD || '狼友, 狼友收藏夹, 91狼友之家, 暗网, 呦呦, 幼幼资源, 91porn, 成人网站, 色情网站, 宅男福利, 福利姬, 强奸, 迷奸, 乱伦, 草榴, 2048, 幼幼, 缅北, 人兽', // 网站关键词 英文逗号隔开
 
